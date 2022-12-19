@@ -2,16 +2,17 @@ package Ejercicios;
 
 import java.util.Scanner;
 
-public class ej12 {
+public class ej13 {
 
 	public static void main(String[] args) {
 		// TODO Esbozo de método generado automáticamente
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Introduce un número de 5 cifras");
+		System.out.println("introduce un número de 5 cfras");
 		int num = teclado.nextInt();
 		
-		System.out.printf("%d\n%d\n%d\n%d\n%d\n", num/10000, num/1000, num/100,
-				num/10, num/1);
+		System.out.printf("%d\n%d\n%d\n%d\n%d\n", num%10, num%100, num%1000,
+				num%10000, num);
+		
 		teclado.close();
 	}
 
